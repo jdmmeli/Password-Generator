@@ -17,9 +17,9 @@ function userCriteria () {
       console.log(length);
     
 
-    var optlowerase = confirm("Click ok to include lowercase letters");
+    var optlowercase = confirm("Click ok to include lowercase letters");
 
-    console.log(optlowerCase)
+    console.log(optlowercase)
 
     var optUppercase = confirm("CLick ok to include uppercase letters");
     console.log(optUppercase);
@@ -30,22 +30,33 @@ function userCriteria () {
     var optSpecial = confirm("click ok to include special characters");
     console.log(optSpecial);
 
-    var userCriteria = confirm("You have chosen " + length +  lowercase +  uppercase +  numbers +  special)
-    console.log(userCriteria)
+    var userCriteria = confirm("You have chosen " + length +  lowercase +  uppercase +  numbers +  special);
+    console.log(userCriteria);
 }
 
-generate ()
+generate ();
 
  
 
  function generate() {
 
-  passwordValues = "!@#$%^&*()abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
-  password = ""
+    if (optlowerCase) {
+        passwordValues += lowerCase;
+    }
 
-    for (var i = 0; i <= 125; i ++) {
+    if (optUppercase) {
+        passwordValues += upperCase;
+    }
+
+    if (optNumbers) {
+        passwordValues += numbers;
+    }
+
+    if (optSpecial) {
+        passwordValues =+ special;
+    }
+for (var i = 0; i < length; i ++) {
         
-   passsword = password + userCriteria.charAt(Math.floor(Math.random() * Math.floor(password.length - 1)))
-   console.log(password)
+   passsword = passwordValues.charAt(Math.floor(Math.random() * Math.floor(password.length - 1)))
 }
 }  
