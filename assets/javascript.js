@@ -17,18 +17,18 @@ function userCriteria () {
       console.log(length);
     
 
-    var lowerCase = confirm("Click ok to include lowercase letters");
+    var optlowerase = confirm("Click ok to include lowercase letters");
 
-    console.log(lowerCase)
+    console.log(optlowerCase)
 
-    var upperCase = confirm("CLick ok to include uppercase letters");
-    console.log(upperCase);
+    var optUppercase = confirm("CLick ok to include uppercase letters");
+    console.log(optUppercase);
 
-    var numbers = confirm("CLick ok to include numbers");
-    console.log(numbers);
+    var optNumbers = confirm("CLick ok to include numbers");
+    console.log(optNumbers);
 
-    var special = confirm("click ok to include special characters");
-    console.log(special);
+    var optSpecial = confirm("click ok to include special characters");
+    console.log(optSpecial);
 
     var userCriteria = confirm("You have chosen " + length +  lowercase +  uppercase +  numbers +  special)
     console.log(userCriteria)
