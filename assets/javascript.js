@@ -3,6 +3,8 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
 var special = "!@#$%^&*()";
+var password = ""
+var passwordValues = ""
 
 function userCriteria () {
     var length = prompt("Please choose length of password, between 8-125 characters");
@@ -44,7 +46,6 @@ generate ()
     for (var i = 0; i <= 125; i ++) {
         
    passsword = password + userCriteria.charAt(Math.floor(Math.random() * Math.floor(password.length - 1)))
-    console.log(password)
- }
+   console.log(password)
+}
 }  
-
